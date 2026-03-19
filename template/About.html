@@ -1,0 +1,94 @@
+{%extends 'base.html' %}
+{%block title%} About {%endblock%}
+{%block content%}
+
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: 'Roboto',sans-serif;
+    }
+    body{
+        background-color: #f2f2f2;
+    }
+    .heading{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 9.3px auto;
+    }
+    .heading h1{
+        font-size: 40px;
+        color: #000;
+        margin-bottom: 25px;
+        position: relative;
+    }
+    .heading h1::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        display: block;
+        margin: 0 auto;
+        background-color: yellow;
+    }
+    .heading p{
+        font-size: medium;
+        color: #666;
+    }
+    .about{
+        margin: 0 auto;
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .about-image{
+        flex: 1;
+        margin-left: 150px;
+        overflow: hidden;
+    }
+    .about-image img{
+        max-width: 100%;
+        height: 250px;
+        display: block;
+        filter: grayscale();
+        transition: 0.5s ease;
+    }
+    .about-image img:hover{
+        transform: scale(1.2);
+    }
+    .about-content{
+        flex: 1.5;
+        margin-right: 100px;
+        font-size: medium;
+        color: #666;
+    }
+</style>
+
+<div class="heading">
+    <h1>ABOUT US</h1>
+    <p>The main motive of legacy intention is to promote the latest knowledge and updates about the world situations in
+        every parameter.</p>
+</div>
+
+    <section class="about">
+        <div class="about-image">
+            <img src="/media/about.jpeg">
+        </div>
+        <div class="about-content">
+            <p>legacy intention provides you a list of articles with
+                a lots of latest knowledge about the world situations.So support us by leaving a comment about the
+                article
+                and you can also contact us for any query about this website or data.If you want to contact us please
+                visit
+                our contact us page.</p>
+        </div>
+    </section>
+
+
+{%endblock%}

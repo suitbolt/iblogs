@@ -1,0 +1,89 @@
+{%extends 'base.html' %}
+{%block title%} Contact {%endblock%}
+{%block content%}
+
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: 'Roboto',sans-serif;
+    }
+    body{
+        background-color: #f2f2f2;
+    }
+    .heading{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 9.3px auto;
+    }
+    .heading h1{
+        font-size: 40px;
+        color: #000;
+        margin-bottom: 25px;
+        position: relative;
+    }
+    .heading h1::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        display: block;
+        margin: 0 auto;
+        background-color: yellow;
+    }
+    .heading p{
+        font-size: medium;
+        color: #666;
+    }
+    .about{
+        margin: 0 auto;
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .about-image{
+        flex: 1;
+        margin-left: 150px;
+        overflow: hidden;
+    }
+    .about-image img{
+        max-width: 100%;
+        height: 250px;
+        display: block;
+        transition: 0.5s ease;
+    }
+    .about-image img:hover{
+        transform: scale(1.2);
+    }
+    .about-content{
+        flex: 1.5;
+        margin-right: 100px;
+        font-size: medium;
+        color: #666;
+    }
+</style>
+
+<div class="heading">
+    <h1>CONTACT US</h1>
+    <p>The main motive of legacy intention is to promote the latest knowledge and updates about the world situations in
+        every parameter.</p>
+</div>
+
+    <section class="about">
+        <div class="about-image">
+            <img src="/media/contact.jpeg">
+        </div>
+        <div class="about-content">
+            <p>Welcome to our contact us page.Here you will find links like instagram,facebook,gmail etc from that you will
+                be contact us easily.and if you will like our website then please share it with your friends and family.
+                love from legacy intention.</p>
+        </div>
+    </section>
+
+{%endblock%}
