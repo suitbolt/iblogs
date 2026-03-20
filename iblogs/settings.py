@@ -30,8 +30,6 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
-    'material',
-    'material.admin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -119,7 +117,7 @@ STATIC_URL = 'static/'
 MEDIA_URL = '/media/'
 STATIC_ROOT = BASE_DIR / "static"
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'staticfiles/media')   # media replace with staticfiles/media
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')   # media replace with staticfiles/media
 
 CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor/"
 CKEDITOR_UPLOAD_PATH = "media/"
