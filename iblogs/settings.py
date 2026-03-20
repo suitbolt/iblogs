@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-f_##)1k_*gy%)2p18m^h67k1)q^#vdfolt0bv4qr5nkm0&$u*q
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -119,7 +119,7 @@ STATIC_URL = 'static/'
 MEDIA_URL = '/media/'
 STATIC_ROOT = BASE_DIR / "static"
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'staticfiles/media')   # media replace with staticfiles/media
 
 CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor/"
 CKEDITOR_UPLOAD_PATH = "media/"
